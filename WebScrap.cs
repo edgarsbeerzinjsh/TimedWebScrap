@@ -43,7 +43,7 @@ namespace TimedWebScrap
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}\n" +
                 $"{responseFromServer}\n");
             
-            //Blob to local storage
+            //Blob to local storage (Storage explorers ar šādu ko uzrāda)
             var client = new BlobContainerClient(
                 "UseDevelopmentStorage=true", "test"
             );
