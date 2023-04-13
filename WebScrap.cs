@@ -27,7 +27,7 @@ namespace TimedWebScrap
     {
         [FunctionName("WebScrap")]
         public async Task Run(
-            [TimerTrigger("*/10 * * * * *")]TimerInfo myTimer, ILogger log)
+            [TimerTrigger("*/20 * * * * *")]TimerInfo myTimer, ILogger log)
         {
             var nameContent = DateTime.Now;
             var idNameByDate = $"{nameContent.Year}_{nameContent.Month}_{nameContent.Day}_{nameContent.Hour}_{nameContent.Minute}_{nameContent.Second}";
