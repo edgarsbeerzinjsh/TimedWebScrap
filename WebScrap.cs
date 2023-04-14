@@ -27,7 +27,7 @@ namespace TimedWebScrap
     {
         [FunctionName("WebScrap")]
         public async Task Run(
-            [TimerTrigger("*/20 * * * * *")]TimerInfo myTimer, ILogger log)
+            [TimerTrigger("0 * * * * *")]TimerInfo myTimer, ILogger log)
         {
             var nameContent = DateTime.Now;
             var idNameByDate = $"{nameContent.Year}_{nameContent.Month}_{nameContent.Day}_{nameContent.Hour}_{nameContent.Minute}_{nameContent.Second}";
@@ -72,7 +72,7 @@ namespace TimedWebScrap
             // Create new item using composite key constructor
             var scrap = new Product()
             {
-                PartitionKey = idNameByDate,
+                PartitionKey = idNameByDate + ".txt",
                 RowKey = status
             };
 
