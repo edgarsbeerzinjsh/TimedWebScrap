@@ -1,0 +1,11 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AzureTableName": "randomapidata",
+    "AzureConnectionString": "UseDevelopmentStorage=true",
+    "AzureBlobContainer": "randomapiblobs",
+    "PublicAPIUrl": "https://api.publicapis.org"
+  }
+}
