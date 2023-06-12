@@ -1,0 +1,15 @@
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\bin\Debug\net6.0\AzureServices.deps.json
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\bin\Debug\net6.0\AzureServices.dll
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\bin\Debug\net6.0\AzureServices.pdb
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\bin\Debug\net6.0\AzureUtils.dll
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\bin\Debug\net6.0\AzureUtils.pdb
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\obj\Debug\net6.0\AzureServices.csproj.AssemblyReference.cache
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\obj\Debug\net6.0\AzureServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\obj\Debug\net6.0\AzureServices.AssemblyInfoInputs.cache
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\obj\Debug\net6.0\AzureServices.AssemblyInfo.cs
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\obj\Debug\net6.0\AzureServices.csproj.CoreCompileInputs.cache
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\obj\Debug\net6.0\AzureServices.csproj.CopyComplete
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\obj\Debug\net6.0\AzureServices.dll
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\obj\Debug\net6.0\refint\AzureServices.dll
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\obj\Debug\net6.0\AzureServices.pdb
+C:\Users\edgar\source\repos\HomeAssignments\TimedWebScrap\AzureServices\obj\Debug\net6.0\ref\AzureServices.dll
