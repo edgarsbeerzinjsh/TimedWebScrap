@@ -1,7 +1,6 @@
 ﻿using Microsoft.WindowsAzure.Storage.Table;
-using System;
 
-namespace AzureUtils
+namespace AzureServices
 {
     public class ScrapEntity : TableEntity
     {

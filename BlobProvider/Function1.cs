@@ -37,12 +37,7 @@ namespace BlobProvider
 
             var content = await blockBlob.DownloadTextAsync();
 
-            return new FileContentResult(Encoding.UTF8.GetBytes(content.ToCharArray()), "aplication/json");
-
-
-            //log.LogInformation(JsonConvert.SerializeObject(data.Content));
-
-            //string responseMessage = JsonConvert.SerializeObject(data);
+            return new FileContentResult(Encoding.UTF8.GetBytes(content.ToCharArray()), "application/json");
 
         }
     }
