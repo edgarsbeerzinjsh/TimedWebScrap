@@ -27,12 +27,12 @@ namespace TimedScrapAPI
             var storageAccount = CloudStorageAccount.Parse("UseDevelopmentStorage=true");
 
             var tableService = new AzureTableService("randomapidata", storageAccount);
-            await tableService.WriteInTable(data.IsSuccessStatusCode, date);
+            var id = await tableService.WriteInTable(data.IsSuccessStatusCode);
 
             var blobClient = storageAccount.CreateCloudBlobClient();
             var container = blobClient.GetContainerReference("randomapiblobs");
             await container.CreateIfNotExistsAsync();
-            var blockBlob = container.GetBlockBlobReference($"{date.Date.ToString("yyyy_MM_dd_T_HH_mm_ss")}.json");
+            var blockBlob = container.GetBlockBlobReference($"{id}.json");
             //var byteContent = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(data.Content).ToCharArray());
             //using (var stream = new MemoryStream(byteContent))
 

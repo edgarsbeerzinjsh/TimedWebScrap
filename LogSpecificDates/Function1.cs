@@ -3,6 +3,7 @@ using System.Globalization;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
+using AzureUtils;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
@@ -11,6 +12,7 @@ using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Microsoft.WindowsAzure.Storage;
 using Newtonsoft.Json;
 
 namespace LogSpecificDates
@@ -37,10 +39,12 @@ namespace LogSpecificDates
 
             DateTime.TryParse(req.Query["from"], out var from);
             DateTime.TryParse(req.Query["to"], out var to);
+            var storageAccount = CloudStorageAccount.Parse("UseDevelopmentStorage=true");
+            var azureTableService = new AzureTableService("randomapidata", storageAccount);
 
+            var data = await azureTableService.ListOfLogRecords(from, to);
 
-
-            string responseMessage = $"from: {from}, to: {to}";
+            string responseMessage = JsonConvert.SerializeObject(data);
 
             return new OkObjectResult(responseMessage);
         }

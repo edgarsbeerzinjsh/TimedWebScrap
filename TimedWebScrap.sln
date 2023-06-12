@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogSpecificDates", "LogSpec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureUtils", "AzureUtils\AzureUtils.csproj", "{3CA27375-8C50-4BFB-BE2C-7C685642D5D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobProvider", "BlobProvider\BlobProvider.csproj", "{44434AC9-3726-4A89-9CE8-88334A450677}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3CA27375-8C50-4BFB-BE2C-7C685642D5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CA27375-8C50-4BFB-BE2C-7C685642D5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CA27375-8C50-4BFB-BE2C-7C685642D5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44434AC9-3726-4A89-9CE8-88334A450677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44434AC9-3726-4A89-9CE8-88334A450677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44434AC9-3726-4A89-9CE8-88334A450677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44434AC9-3726-4A89-9CE8-88334A450677}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
